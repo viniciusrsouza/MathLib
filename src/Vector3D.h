@@ -153,7 +153,4 @@ namespace MathLib {
      * toString operator override
      */
     VECTOR_3D_API inline std::ostream& operator<<(std::ostream& Str, Vector3D& v);
-
-    // Const zero vector.
-    VECTOR_3D_API const Vector3D ZeroVector;
 }

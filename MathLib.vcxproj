@@ -165,6 +165,7 @@
   <ItemGroup>
     <ClInclude Include="src/framework.h" />
     <ClInclude Include="src/pch.h" />
+    <ClInclude Include="src\Transform.h" />
     <ClInclude Include="src\Vector3D.h" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +176,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Transform.cpp" />
     <ClCompile Include="src\Vector3D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
