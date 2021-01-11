@@ -136,6 +136,11 @@ namespace MathLib {
         Vector3D normalize() const;
 
         /**
+        * multiplies the provided matrix by [this].
+        */
+        Vector3D multiply_matrix(float** matrix) const;
+
+        /**
          * @return distance of [this] (this / ||this||).
          */
         float distance(const Vector3D& u) const;

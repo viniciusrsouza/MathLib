@@ -100,6 +100,14 @@ Vector3D Vector3D::normalize() const {
     return Vector3D();
 }
 
+Vector3D Vector3D::multiply_matrix(float** matrix) const {
+    return Vector3D(
+        (x * matrix[0][0]) + (y * matrix[0][1]) + (z * matrix[0][2]),
+        (x * matrix[1][0]) + (y * matrix[1][1]) + (z * matrix[1][2]),
+        (x * matrix[2][0]) + (y * matrix[2][1]) + (z * matrix[2][2])
+    );
+}
+
 float Vector3D::distance(const Vector3D& u) const {
     Vector3D d = Vector3D(x - u.x, y - u.y, z - u.z);
     return std::sqrt(d.x * d.x + d.y * d.y + d.z * d.z);

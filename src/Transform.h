@@ -13,4 +13,5 @@ namespace MathLib {
 	* projeta o vetor [source] no vetor [target]
 	*/
 	TRANSFORM_API Vector3D project(Vector3D source, Vector3D target);
+	TRANSFORM_API float** transpose_3x3(float** matrix);
 }
